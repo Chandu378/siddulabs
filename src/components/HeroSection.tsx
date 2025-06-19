@@ -32,12 +32,12 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl -mx-auto ">
           
           {/* Professional Photo */}
-          <div className="mb-8 animate-fade-in">
+          <div className="mb-8 -scale-110 ">
             <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-primary/40 shadow-2xl hover:border-primary/70 transition-all duration-500 transform hover:scale-105 glow-hover">
-              <img alt="Professional Portrait" src="https://i.postimg.cc/qBKj97dB/33.jpg" className="w-full h-full hover:scale-110 transition-transform duration-700 object-cover" />
+              <img alt="Professional Portrait" src="https://i.postimg.cc/qBKj97dB/33.jpg" className="max-w-full min-h-full hover:scale-110 transition-transform duration-700 -scale-110 " />
             </div>
           </div>
 
@@ -54,9 +54,9 @@ const HeroSection = () => {
           </p>
           
           {/* Professional Subtitle */}
-          <p className="text-lg text-muted-foreground/90 mb-8 max-w-3xl mx-auto animate-fade-in leading-relaxed" style={{
+          <p style={{
           animationDelay: '0.8s'
-        }}>
+        }} className="text-muted-foreground/90 mb-8 max-w-3xl mx-auto animate-fade-in leading-relaxed text-lg">
             BTech Engineering Student | Full-Stack Developer | AI Enthusiast
             <br />
             <span className="text-primary/80">Passionate about building innovative technology solutions that make a difference</span>
