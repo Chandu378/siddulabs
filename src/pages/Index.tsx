@@ -68,7 +68,7 @@ const Index = () => {
             {/* Copyright */}
             <div className="text-center">
               <p className="text-muted-foreground">
-                © 2024 Engineering Portfolio. Built with passion and React.
+              💫 Creative & Personal
               </p>
               <p className="text-sm text-muted-foreground/60 mt-2">
                 Designed to inspire • Engineered to impress

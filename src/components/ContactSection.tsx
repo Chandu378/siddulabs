@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 import { Send, Mail, MessageSquare, User } from 'lucide-react';
+
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Add form submission logic here
+    const subject = encodeURIComponent(`Contact from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    window.location.href = `mailto:siddunikhilesh517@gmail.com?subject=${subject}&body=${body}`;
   };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -106,5 +110,6 @@ const ContactSection = () => {
         </div>
       </div>
     </section>;
+
 };
 export default ContactSection;

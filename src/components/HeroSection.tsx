@@ -68,18 +68,29 @@ const HeroSection = () => {
                 <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
               </span>
             </button>
-            <button className="group px-10 py-4 border-2 border-primary text-primary rounded-xl font-semibold hover:bg-primary/10 transition-all duration-300 glow-hover transform hover:scale-105 hover:-translate-y-1 backdrop-blur-sm">
+            <a
+              href="/FinalResume.pdf"
+              download="Nikhilesh-Resume.pdf"
+              className="group px-10 py-4 border-2 border-primary text-primary rounded-xl font-semibold hover:bg-primary/10 transition-all duration-300 glow-hover transform hover:scale-105 hover:-translate-y-1 backdrop-blur-sm flex items-center justify-center no-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span className="flex items-center space-x-2">
                 <Download className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 <span>Download Resume</span>
               </span>
-            </button>
-            <button className="group px-10 py-4 bg-accent/20 border-2 border-accent/40 text-accent rounded-xl font-semibold hover:bg-accent/30 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1">
+            </a>
+            <a
+              href="mailto:siddunikhilesh517@gmail.com"
+              className="group px-10 py-4 bg-accent/20 border-2 border-accent/40 text-accent rounded-xl font-semibold hover:bg-accent/30 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center no-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 <span>Get In Touch</span>
               </span>
-            </button>
+            </a>
           </div>
 
           {/* Professional Stats */}
