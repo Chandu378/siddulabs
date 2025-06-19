@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Download, MapPin, Phone, Mail, Calendar } from 'lucide-react';
-
 const ProfessionalPhoto = () => {
-  return (
-    <div className="bg-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 hover:border-primary/40 transition-all duration-500 glow-hover">
+  return <div className="bg-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 hover:border-primary/40 transition-all duration-500 glow-hover">
       <div className="text-center mb-6">
         <h3 className="text-2xl font-bold text-foreground mb-2">Professional Profile</h3>
         <p className="text-muted-foreground">BTech Engineering Student</p>
@@ -13,11 +10,7 @@ const ProfessionalPhoto = () => {
       {/* Professional Photo */}
       <div className="relative w-64 h-80 mx-auto mb-6">
         <div className="w-full h-full rounded-xl overflow-hidden border-4 border-primary/30 shadow-2xl hover:border-primary/60 transition-all duration-500 transform hover:scale-105">
-          <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" 
-            alt="Professional Portrait" 
-            className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-          />
+          <img alt="Professional Portrait" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" src="https://i.postimg.cc/qBKj97dB/33.jpg" />
         </div>
         
         {/* Status Badge */}
@@ -30,19 +23,19 @@ const ProfessionalPhoto = () => {
       <div className="space-y-4 text-sm">
         <div className="flex items-center space-x-3 text-muted-foreground">
           <MapPin className="w-4 h-4 text-primary" />
-          <span>Delhi, India</span>
+          <span>Banglore, India</span>
         </div>
         <div className="flex items-center space-x-3 text-muted-foreground">
           <Calendar className="w-4 h-4 text-primary" />
-          <span>Expected Graduation: 2025</span>
+          <span>Expected Graduation: 2026</span>
         </div>
         <div className="flex items-center space-x-3 text-muted-foreground">
           <Phone className="w-4 h-4 text-primary" />
-          <span>+91 98765 43210</span>
+          <span>+91 7995482997</span>
         </div>
         <div className="flex items-center space-x-3 text-muted-foreground">
           <Mail className="w-4 h-4 text-primary" />
-          <span>john.doe@email.com</span>
+          <span>siddunikhilesh517@gmail.com</span>
         </div>
       </div>
 
@@ -55,8 +48,6 @@ const ProfessionalPhoto = () => {
           </span>
         </button>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ProfessionalPhoto;

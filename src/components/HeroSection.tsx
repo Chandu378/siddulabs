@@ -97,7 +97,7 @@ const HeroSection = () => {
               <div className="text-sm text-muted-foreground">Projects</div>
             </div>
             <div className="text-center group cursor-pointer">
-              <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform duration-300">3+</div>
+              <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform duration-300">Fresher</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div className="text-center group cursor-pointer">
