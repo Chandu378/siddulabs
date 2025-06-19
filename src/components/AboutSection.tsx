@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { GraduationCap, Target, Heart, Award, Users, Lightbulb } from 'lucide-react';
+import ProfessionalPhoto from './ProfessionalPhoto';
 
 const AboutSection = () => {
   const highlights = [
@@ -50,42 +50,16 @@ const AboutSection = () => {
             About Me
           </h2>
           
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Enhanced Profile Section */}
-            <div className="relative animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="relative w-96 h-96 mx-auto">
-                {/* Main professional photo */}
-                <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl hover:border-primary/60 transition-all duration-500 transform hover:scale-105 glow-hover">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face" 
-                    alt="Professional Portrait" 
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-                
-                {/* Floating Tech Icons with enhanced animations */}
-                <div className="absolute -top-4 -right-4 animate-float">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 border-2 border-primary/40 flex items-center justify-center backdrop-blur-sm hover:scale-110 transition-transform duration-300">
-                    <span className="text-2xl">⚡</span>
-                  </div>
-                </div>
-                <div className="absolute -bottom-4 -left-4 animate-float" style={{animationDelay: '2s'}}>
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent/30 to-accent/10 border-2 border-accent/40 flex items-center justify-center backdrop-blur-sm hover:scale-110 transition-transform duration-300">
-                    <span className="text-2xl">🔧</span>
-                  </div>
-                </div>
-                <div className="absolute top-1/2 -left-8 animate-float" style={{animationDelay: '4s'}}>
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500/30 to-green-500/10 border-2 border-green-500/40 flex items-center justify-center backdrop-blur-sm hover:scale-110 transition-transform duration-300">
-                    <span className="text-lg">💡</span>
-                  </div>
-                </div>
-              </div>
+          <div className="grid lg:grid-cols-3 gap-16 items-start">
+            {/* Professional Photo Section */}
+            <div className="lg:col-span-1 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <ProfessionalPhoto />
             </div>
 
             {/* Enhanced About Content */}
-            <div className="space-y-8 animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <div className="lg:col-span-2 space-y-8 animate-fade-in" style={{animationDelay: '0.6s'}}>
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
+                <h3 className="text-3xl font-bold text-foreground mb-4">
                   Crafting Digital Experiences with 
                   <span className="text-primary"> Engineering Precision</span>
                 </h3>
