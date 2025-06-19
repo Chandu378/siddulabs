@@ -43,9 +43,7 @@ const HeroSection = () => {
 
           {/* Main Heading with enhanced animation */}
           <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
-            <span className="gradient-text text-glow hover:scale-105 transition-transform duration-300 inline-block">
-              Your Name
-            </span>
+            <span className="gradient-text text-glow hover:scale-105 transition-transform duration-300 inline-block">B. Siddi Nikhilesh</span>
           </h1>
           
           {/* Enhanced Tagline */}
