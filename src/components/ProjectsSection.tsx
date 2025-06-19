@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Github, Play } from 'lucide-react';
 
@@ -9,44 +8,78 @@ const ProjectsSection = () => {
       description: "Real-time monitoring system for IoT devices with interactive charts and alerts. Built with React, Node.js, and WebSocket connections.",
       tech: ["React", "Node.js", "Socket.io", "MongoDB"],
       gradient: "from-blue-500 to-purple-600",
-      emoji: "📊"
+      emoji: "📊",
+      demoUrl: "https://demo-iot-dashboard.com",
+      githubUrl: "https://github.com/yourusername/iot-dashboard",
+      liveUrl: "https://iot-dashboard-live.com"
     },
     {
       title: "AI-Powered Study Assistant",
       description: "Machine learning application that helps students optimize their study schedules based on performance analytics.",
       tech: ["Python", "TensorFlow", "Flask", "React"],
       gradient: "from-green-500 to-teal-600",
-      emoji: "🤖"
+      emoji: "🤖",
+      demoUrl: "https://demo-study-assistant.com",
+      githubUrl: "https://github.com/yourusername/study-assistant",
+      liveUrl: "https://study-assistant-live.com"
     },
     {
       title: "Sustainable Energy Monitor",
       description: "Environmental monitoring system that tracks energy consumption and suggests optimization strategies.",
       tech: ["Arduino", "React", "Node.js", "SQLite"],
       gradient: "from-yellow-500 to-orange-600",
-      emoji: "🌱"
+      emoji: "🌱",
+      demoUrl: "https://demo-energy-monitor.com",
+      githubUrl: "https://github.com/yourusername/energy-monitor",
+      liveUrl: "https://energy-monitor-live.com"
     },
     {
       title: "Virtual Reality Campus Tour",
       description: "Immersive VR experience for prospective students to explore the campus remotely using WebXR technologies.",
       tech: ["Three.js", "WebXR", "React", "Blender"],
       gradient: "from-purple-500 to-pink-600",
-      emoji: "🥽"
+      emoji: "🥽",
+      demoUrl: "https://demo-vr-campus.com",
+      githubUrl: "https://github.com/yourusername/vr-campus",
+      liveUrl: "https://vr-campus-live.com"
     },
     {
       title: "Blockchain Voting System",
       description: "Secure and transparent voting platform built on blockchain technology ensuring election integrity.",
       tech: ["Solidity", "Web3.js", "React", "Ethereum"],
       gradient: "from-indigo-500 to-blue-600",
-      emoji: "🗳️"
+      emoji: "🗳️",
+      demoUrl: "https://demo-blockchain-voting.com",
+      githubUrl: "https://github.com/yourusername/blockchain-voting",
+      liveUrl: "https://blockchain-voting-live.com"
     },
     {
       title: "Robotics Control Interface",
       description: "Advanced control system for robotic arms with real-time feedback and machine vision integration.",
       tech: ["Python", "OpenCV", "ROS", "Qt"],
       gradient: "from-red-500 to-pink-600",
-      emoji: "🦾"
+      emoji: "🦾",
+      demoUrl: "https://demo-robotics-control.com",
+      githubUrl: "https://github.com/yourusername/robotics-control",
+      liveUrl: "https://robotics-control-live.com"
     }
   ];
+
+  const handleDemoClick = (demoUrl: string) => {
+    window.open(demoUrl, '_blank');
+  };
+
+  const handleGitHubClick = (githubUrl: string) => {
+    window.open(githubUrl, '_blank');
+  };
+
+  const handleLiveClick = (liveUrl: string) => {
+    window.open(liveUrl, '_blank');
+  };
+
+  const handleViewAllClick = () => {
+    window.open('https://github.com/yourusername', '_blank');
+  };
 
   return (
     <section id="projects" className="py-20 relative">
@@ -91,17 +124,26 @@ const ProjectsSection = () => {
                 
                 {/* Project Actions */}
                 <div className="flex space-x-3">
-                  <button className="flex items-center space-x-2 px-4 py-2 bg-primary/20 hover:bg-primary/30 border border-primary/40 rounded-lg text-primary text-sm font-medium transition-all duration-300 hover:glow">
+                  <button 
+                    onClick={() => handleDemoClick(project.demoUrl)}
+                    className="flex items-center space-x-2 px-4 py-2 bg-primary/20 hover:bg-primary/30 border border-primary/40 rounded-lg text-primary text-sm font-medium transition-all duration-300 hover:glow"
+                  >
                     <Play className="w-4 h-4" />
                     <span>Demo</span>
                   </button>
                   
-                  <button className="flex items-center space-x-2 px-4 py-2 bg-muted/20 hover:bg-muted/30 border border-muted/40 rounded-lg text-muted-foreground text-sm font-medium transition-all duration-300 hover:text-foreground">
+                  <button 
+                    onClick={() => handleGitHubClick(project.githubUrl)}
+                    className="flex items-center space-x-2 px-4 py-2 bg-muted/20 hover:bg-muted/30 border border-muted/40 rounded-lg text-muted-foreground text-sm font-medium transition-all duration-300 hover:text-foreground"
+                  >
                     <Github className="w-4 h-4" />
                     <span>Code</span>
                   </button>
                   
-                  <button className="flex items-center space-x-2 px-4 py-2 bg-accent/20 hover:bg-accent/30 border border-accent/40 rounded-lg text-accent text-sm font-medium transition-all duration-300">
+                  <button 
+                    onClick={() => handleLiveClick(project.liveUrl)}
+                    className="flex items-center space-x-2 px-4 py-2 bg-accent/20 hover:bg-accent/30 border border-accent/40 rounded-lg text-accent text-sm font-medium transition-all duration-300"
+                  >
                     <ExternalLink className="w-4 h-4" />
                   </button>
                 </div>
@@ -114,7 +156,10 @@ const ProjectsSection = () => {
           
           {/* View More Button */}
           <div className="text-center mt-12">
-            <button className="px-8 py-3 bg-primary/20 hover:bg-primary/30 border border-primary/40 rounded-lg text-primary font-semibold transition-all duration-300 glow-hover transform hover:scale-105">
+            <button 
+              onClick={handleViewAllClick}
+              className="px-8 py-3 bg-primary/20 hover:bg-primary/30 border border-primary/40 rounded-lg text-primary font-semibold transition-all duration-300 glow-hover transform hover:scale-105"
+            >
               View All Projects
             </button>
           </div>
