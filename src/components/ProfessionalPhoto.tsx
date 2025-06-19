@@ -44,7 +44,7 @@ const ProfessionalPhoto = () => {
         <button className="w-full group px-6 py-3 bg-primary text-primary-foreground rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 glow-hover transform hover:scale-105 shadow-lg">
           <span className="flex items-center justify-center space-x-2">
             <Download className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-            <span>Download Resume</span>
+            <span className="font-normal">Download Resume</span>
           </span>
         </button>
       </div>
