@@ -4,65 +4,46 @@ import { ExternalLink, Github, Play } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Smart IoT Dashboard",
-      description: "Real-time monitoring system for IoT devices with interactive charts and alerts. Built with React, Node.js, and WebSocket connections.",
-      tech: ["React", "Node.js", "Socket.io", "MongoDB"],
+       title: "Smart Agentic Job Portal",
+      description: "Jobnect-Arena is an intelligent job matching platform that leverages NLP to analyze user profiles and job descriptions for precise alignment. It integrates OpenAI-powered agents to deliver dynamic resume enhancements and personalized career recommendations. The agentic AI workflow automates end-to-end user interaction, making the platform adaptive, efficient, and user-centric.",
+      tech: ["React", "Node.js", "TypeScript", "OpenAI", "Agentic AI", "NLP"],
       gradient: "from-blue-500 to-purple-600",
       emoji: "📊",
-      demoUrl: "https://demo-iot-dashboard.com",
-      githubUrl: "https://github.com/yourusername/iot-dashboard",
-      liveUrl: "https://iot-dashboard-live.com"
+      //demoUrl: "https://demo-iot-dashboard.com",
+      githubUrl: "https://github.com/SIDDU2402/jobnect-arena",
+      //liveUrl: "https://iot-dashboard-live.com"
     },
     {
-      title: "AI-Powered Study Assistant",
-      description: "Machine learning application that helps students optimize their study schedules based on performance analytics.",
-      tech: ["Python", "TensorFlow", "Flask", "React"],
+       title: "Real-Time Sign Language Translator",
+      description: "Sign Language Translator is a real-time translation system that uses computer vision and deep learning to interpret sign language gestures. It leverages NLP to convert recognized gestures into grammatically correct spoken or written language. This project bridges communication gaps by enabling seamless interaction between hearing and speech-impaired individuals and the broader community.",
+      tech: ["Python", "TensorFlow", "Flask", "CNN", "OpenCV", "NLP","Keras"],
       gradient: "from-green-500 to-teal-600",
       emoji: "🤖",
-      demoUrl: "https://demo-study-assistant.com",
-      githubUrl: "https://github.com/yourusername/study-assistant",
-      liveUrl: "https://study-assistant-live.com"
+     // demoUrl: "https://demo-study-assistant.com",
+      githubUrl: "https://github.com/SIDDU2402/Sign-language-translator",
+      //liveUrl: "https://study-assistant-live.com"
     },
     {
-      title: "Sustainable Energy Monitor",
-      description: "Environmental monitoring system that tracks energy consumption and suggests optimization strategies.",
-      tech: ["Arduino", "React", "Node.js", "SQLite"],
+      title: "Recipie Sharing Platform",
+      description: "Recipe Sharing Platform is a simple web-based application that allows users to create, view, and share recipes. It features a basic HTML/CSS/JavaScript frontend and stores recipe data in structured text format. The project serves as a lightweight solution for managing and browsing personal or community-driven cooking content.",
+      tech: ["HTML", "CSS", "Node.js", "MongoDB", "Express.js"],
       gradient: "from-yellow-500 to-orange-600",
       emoji: "🌱",
-      demoUrl: "https://demo-energy-monitor.com",
-      githubUrl: "https://github.com/yourusername/energy-monitor",
-      liveUrl: "https://energy-monitor-live.com"
+      //demoUrl: "https://demo-energy-monitor.com",
+      githubUrl: "https://github.com/SIDDU2402/siddu/tree/main/Desktop/Recipie",
+      liveUrl: "https://siddu-42rt.vercel.app/"
     },
     {
-      title: "Virtual Reality Campus Tour",
-      description: "Immersive VR experience for prospective students to explore the campus remotely using WebXR technologies.",
-      tech: ["Three.js", "WebXR", "React", "Blender"],
+       title: "BeatSync-AI Music Collaboration",
+      description: "Melody Bloom Hub is a modern music streaming and sharing platform built with React and Node.js, offering users a sleek interface to discover and play songs. It allows users to upload tracks, manage playlists, and enjoy a dynamic, interactive music experience. The project combines responsive UI design with backend integration to deliver a smooth and engaging audio platform..",
+      tech: ["React", "Node.js", "TypeScript", "Vite",],
       gradient: "from-purple-500 to-pink-600",
       emoji: "🥽",
       demoUrl: "https://demo-vr-campus.com",
-      githubUrl: "https://github.com/yourusername/vr-campus",
-      liveUrl: "https://vr-campus-live.com"
-    },
-    {
-      title: "Blockchain Voting System",
-      description: "Secure and transparent voting platform built on blockchain technology ensuring election integrity.",
-      tech: ["Solidity", "Web3.js", "React", "Ethereum"],
-      gradient: "from-indigo-500 to-blue-600",
-      emoji: "🗳️",
-      demoUrl: "https://demo-blockchain-voting.com",
-      githubUrl: "https://github.com/yourusername/blockchain-voting",
-      liveUrl: "https://blockchain-voting-live.com"
-    },
-    {
-      title: "Robotics Control Interface",
-      description: "Advanced control system for robotic arms with real-time feedback and machine vision integration.",
-      tech: ["Python", "OpenCV", "ROS", "Qt"],
-      gradient: "from-red-500 to-pink-600",
-      emoji: "🦾",
-      demoUrl: "https://demo-robotics-control.com",
-      githubUrl: "https://github.com/yourusername/robotics-control",
-      liveUrl: "https://robotics-control-live.com"
+      githubUrl: "https://github.com/SIDDU2402/melody-bloom-hub",
+      liveUrl: "https://beatsync-steel.vercel.app"
     }
+    
   ];
 
   const handleDemoClick = (demoUrl: string) => {
@@ -78,7 +59,7 @@ const ProjectsSection = () => {
   };
 
   const handleViewAllClick = () => {
-    window.open('https://github.com/yourusername', '_blank');
+    window.open('https://github.com/SIDDU2402', '_blank');
   };
 
   return (

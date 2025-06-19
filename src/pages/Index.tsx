@@ -15,11 +15,11 @@ const Index = () => {
   };
 
   const handleLinkedInClick = () => {
-    window.open('https://linkedin.com/in/yourprofile', '_blank');
+    window.open('https://www.linkedin.com/in/siddu-nikhilesh-35a3b52b9/', '_blank');
   };
 
   const handleGitHubClick = () => {
-    window.open('https://github.com/yourusername', '_blank');
+    window.open('https://github.com/SIDDU2402', '_blank');
   };
 
   return (

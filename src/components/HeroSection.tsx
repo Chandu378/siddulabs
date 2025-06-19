@@ -53,7 +53,7 @@ const HeroSection = () => {
           <p style={{
             animationDelay: '0.8s'
           }} className="text-muted-foreground/90 mb-8 max-w-3xl mx-auto animate-fade-in leading-relaxed text-lg">
-            BTech Engineering Student | Full-Stack Developer | AI Enthusiast
+            BTech Engineering Student | Cloud Computing Enthusiast | AI Enthusiast
             <br />
             <span className="text-primary/80">Passionate about building innovative technology solutions that make a difference</span>
           </p>

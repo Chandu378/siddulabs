@@ -6,7 +6,7 @@ const SkillsSection = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "JavaScript", level: 90, color: "from-yellow-400 to-yellow-600" },
+        { name: "C", level: 90, color: "from-yellow-400 to-yellow-600" },
         { name: "Python", level: 85, color: "from-blue-400 to-blue-600" },
         { name: "Java", level: 80, color: "from-red-400 to-red-600" },
         { name: "C++", level: 75, color: "from-purple-400 to-purple-600" },
@@ -18,15 +18,15 @@ const SkillsSection = () => {
         { name: "React", level: 90, color: "from-cyan-400 to-cyan-600" },
         { name: "Node.js", level: 85, color: "from-green-400 to-green-600" },
         { name: "TypeScript", level: 80, color: "from-blue-500 to-blue-700" },
-        { name: "Next.js", level: 75, color: "from-gray-400 to-gray-600" },
+        { name: "HTML & CSS", level: 90, color: "from-gray-400 to-gray-600" },
       ]
     },
     {
       title: "Tools & Platforms",
       skills: [
         { name: "Git", level: 90, color: "from-orange-400 to-orange-600" },
-        { name: "Docker", level: 70, color: "from-blue-400 to-blue-600" },
-        { name: "AWS", level: 65, color: "from-yellow-500 to-orange-500" },
+        { name: "Docker", level: 85, color: "from-blue-400 to-blue-600" },
+        { name: "AWS", level: 80, color: "from-yellow-500 to-orange-500" },
         { name: "MongoDB", level: 75, color: "from-green-500 to-green-700" },
       ]
     }
