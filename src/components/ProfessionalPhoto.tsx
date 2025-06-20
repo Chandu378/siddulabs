@@ -43,7 +43,7 @@ const ProfessionalPhoto = () => {
       {/* Download Resume Button */}
       <div className="mt-6">
         <a
-          href="./public/FinalResume.pdf"
+          href="/FinalResume.pdf"
           download="Nikhilesh-Resume.pdf"
           className="w-full group px-6 py-3 bg-primary text-primary-foreground rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 glow-hover transform hover:scale-105 shadow-lg flex items-center justify-center no-underline"
           target="_blank"
