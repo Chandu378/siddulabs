@@ -4,8 +4,8 @@ const ProfessionalPhoto = () => {
   return (
     <div className="bg-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 hover:border-primary/40 transition-all duration-500 glow-hover">
       <div className="text-center mb-6">
-        <h3 className="text-2xl font-bold text-foreground mb-2">Professional Profile</h3>
-        <p className="text-muted-foreground">BTech Engineering Student</p>
+        <h3 className="text-2xl font-bold mb-2 text-blue-700 dark:text-foreground">Professional Profile</h3>
+        <p className="text-pink-700 dark:text-muted-foreground">BTech Engineering Student</p>
       </div>
       
       {/* Professional Photo */}
@@ -22,19 +22,19 @@ const ProfessionalPhoto = () => {
 
       {/* Professional Details */}
       <div className="space-y-4 text-sm">
-        <div className="flex items-center space-x-3 text-muted-foreground">
+        <div className="flex items-center space-x-3 text-purple-700 dark:text-muted-foreground">
           <MapPin className="w-4 h-4 text-primary" />
           <span>Banglore, India</span>
         </div>
-        <div className="flex items-center space-x-3 text-muted-foreground">
+        <div className="flex items-center space-x-3 text-cyan-700 dark:text-muted-foreground">
           <Calendar className="w-4 h-4 text-primary" />
           <span>Expected Graduation: 2026</span>
         </div>
-        <div className="flex items-center space-x-3 text-muted-foreground">
+        <div className="flex items-center space-x-3 text-orange-700 dark:text-muted-foreground">
           <Phone className="w-4 h-4 text-primary" />
           <span>+91 7995482997</span>
         </div>
-        <div className="flex items-center space-x-3 text-muted-foreground">
+        <div className="flex items-center space-x-3 text-emerald-700 dark:text-muted-foreground">
           <Mail className="w-4 h-4 text-primary" />
           <span>siddunikhilesh517@gmail.com</span>
         </div>
